@@ -1,0 +1,1 @@
+{"woolwich-ferry": {"inbound": {"0": [{"prevBranchIds": [], "nextBranchIds": [], "stopPoint": ["930GWWC", "930GWWS"], "stopLetter": ["", ""]}]}, "outbound": {"1": [{"prevBranchIds": [], "nextBranchIds": [], "stopPoint": ["930GWWS", "930GWWC"], "stopLetter": ["", ""]}]}}}
