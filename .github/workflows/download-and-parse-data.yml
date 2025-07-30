@@ -35,4 +35,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./data  # Make sure your script puts finalised files here
-          force_orphan: true  # This avoids history clutter
+          # force_orphan: true  # This avoids history clutter
