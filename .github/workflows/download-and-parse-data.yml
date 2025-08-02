@@ -29,13 +29,14 @@ jobs:
         run: |
           python tfl.py
 
+      - name: Set commit message with timestamp
+        run: echo "COMMIT_MSG=Update TfL Open Data at $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
+
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./data  # Make sure your script puts finalised files here
-          destination_dir: data
-          exclude_assets: '.nojekyll'
-          commit_message: ${{ github.event.head_commit.message }}
-          # force_orphan: true  # This avoids history clutter
+            target-folder: data/
+            folder: data
+            commit-message: ${{ env.COMMIT_MSG }}
+            branch: gh-pages
+            clean: false
