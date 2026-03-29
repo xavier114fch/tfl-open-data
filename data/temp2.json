@@ -1,1 +1,1 @@
-{"woolwich-ferry": {"inbound": [{"tree": ["0.0"], "stopPoint": ["930GWWC", "930GWWS"], "stopLetter": ["", ""]}], "outbound": [{"tree": ["1.0"], "stopPoint": ["930GWWS", "930GWWC"], "stopLetter": ["", ""]}]}}
+{"woolwich-ferry": {"inbound": [{"tree": ["0.0"], "stopPoint": ["930GWWC", "930GWWS"], "stopLetter": ["", ""]}, {"tree": ["0.1"], "stopPoint": ["930GWWC", "930GWWS"], "stopLetter": ["", ""]}], "outbound": [{"tree": ["1.0"], "stopPoint": ["930GWWS", "930GWWC"], "stopLetter": ["", ""]}, {"tree": ["1.1"], "stopPoint": ["930GWWS", "930GWWC"], "stopLetter": ["", ""]}]}}
